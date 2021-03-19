@@ -88,7 +88,7 @@ Vector * crearVector(int n) {
   arreglo->capacidad = n;
   arreglo->datos = (int*) calloc(n,sizeof(int));
 
-   return arreglo;
+  return arreglo;
 }
 
 /*
@@ -106,7 +106,8 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   return v->datos[i];
+  return 0;
+  //return v->datos[i];
 }
 
 /*
