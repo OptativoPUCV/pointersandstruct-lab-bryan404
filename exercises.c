@@ -114,14 +114,12 @@ actualiza el vector `c` con el resultado de la suma.
 */
 
 void sumaV(Vector * a, Vector * b, Vector * c) {
-int i = -1;
+  int i = -1;
 
-do{
-  i++;
-  c->datos[i] = a->datos[i] + b->datos[i];
-}while(c->datos[i] != 0);
-
-c->datos[i] = a->datos[i] + b->datos[i];
+  do{
+    i++;
+    c->datos[i] = a->datos[i] + b->datos[i];
+  }while(c->datos[i] != 0);
 }
 
 /*
