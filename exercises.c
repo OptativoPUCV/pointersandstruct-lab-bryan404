@@ -37,15 +37,7 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-  /*
-  int resta = n-m-1;
   
-  int i;
-  *suma = 0;
-  for(i = n-1; i>resta ; i--){
-    *suma += a[i];
-  }
-  */
   int resta = n-m;
   *suma = sumaN(a + resta, m);
 }
@@ -139,16 +131,20 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
   asignarValor(c,0,aux);
   asignarValor(c,1,aux2);
   */
+
+  //Creamos los vectores para almacenar (a1,a2) y (b1+b2) en distintos vectores
   Vector *vectorA;
   vectorA = crearVector(2);
   Vector *vectorB;
   vectorB = crearVector(2);
 
+  //Asignamos valor a los vectores
   asignarValor(vectorA, 0, a1);
   asignarValor(vectorA, 1, a2);
   asignarValor(vectorB, 0, b1);
   asignarValor(vectorB, 1, b2);
 
+  //Realizamos la suma (a1,a2)+(b1+b2)
   sumaV(vectorA, vectorB, c);
 
 }
